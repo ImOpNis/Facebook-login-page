@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+    background: #f0f2f5;
+	font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none; 
+}
+
+button {
+    border: none;
+	cursor: pointer;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+input {
+    padding: 14px 16px;
+    margin: 2% 0;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    width: 330px;
+}
+
+input:focus {
+	border-color: #1b74e4 !important;
+	outline: #1b74e4;
+}
+
+input::placeholder {
+    color: gray;
+    font-weight: lighter;
+    font-size: 17px;
+}
+
+.btn {
+    width: 100%;
+    border-radius: 3px;
+    color: #fff;
+    padding: 6px;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	height: 90%;
+}
+
+.text__wrapper {
+    width: 37vw;
+    margin-right: 3%;
+}
+
+.imgg > img {
+    width: 310px;
+	margin-left: -30px;
+}
+
+.description {
+    font-weight: 900;
+    font-size: 28px;
+    float: left;
+}
+
+.form__wrapper {
+	width: 396px;
+    margin-top: 5%;
+    background-color: #fff;
+    padding: 20px 0 28px;
+    line-height: 150%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    border-radius: 8px;
+}
+
+.loginButton {
+    margin-top: 2%;
+    background-color: #1877f2;
+    border: none;
+    border-radius: 6px;
+    font-size: 20px;
+    line-height: 48px;
+    padding: 0 16px;
+    width: 332px;
+	font-weight: 600;
+}
+
+.loginButton.btn:hover {
+    background-color: #166fe5;
+}
+
+.registerButton {
+    width: 60%;
+    border: none;
+    border-radius: 6px;
+    font-size: 17px;
+    line-height: 48px;
+    padding: 0 16px;
+    background-color: #42b72a;
+}
+
+hr {
+    margin: 20px 16px;
+}
+
+.celebritytxt {
+    margin-top: 28px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.forgotPassword {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 16px;
+}
+
+.forgotPassword a {
+    color: #1877f2;
+}
+
+.celebritytxt a {
+    font-weight: 600;
+}
+
+/* Responsive Code */
+@media (max-width: 768px) {
+	#container {
+		display: block;
+		margin: unset;
+	}
+	
+	.imgg > img {
+		width: 200px;
+		margin: 0;
+	}
+	
+	.text__wrapper {
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	.imgg {
+		text-align: center;
+		position: unset;
+	}
+	
+	.description {
+		font-size: 18px;
+		float: unset;
+	}
+	
+	.form__wrapper {
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+		padding: 20px 10px 28px 10px;
+	}
+	
+	input, .loginButton {
+		width: 100%;
+	}
+	
+	input::placeholder {
+		font-size: 14px;
+	}
+}
